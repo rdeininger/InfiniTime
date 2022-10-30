@@ -9,15 +9,21 @@ namespace Pinetime {
         ScoreCounter(lv_font_t& font);
 
         void Create();
-        void UpBtnPressed();
-        void DownBtnPressed();
+        void MyUpBtnPressed();
+        void OpUpBtnPressed();
+        void MyDownBtnPressed();
+        void OpDownBtnPressed();
         void HideControls();
         void ShowControls();
         void EnablePointMode();
         void SetValueChangedEventCallback(void* userData, void (*handler)(void* userData));
 
-        int GetValue() const {
-          return value;
+        int GetMyValue() const {
+          return myValue;
+        }
+
+        int GetOpValue() const {
+          return opValue;
         }
 
         lv_obj_t* GetObject() const {
@@ -28,6 +34,8 @@ namespace Pinetime {
         void UpdateLabel();
         void (*ValueChangedHandler)(void* userData) = nullptr;
 
+        lv_obj_t* myContainer;
+        lv_obj_t* opContainer;
         lv_obj_t* counterContainer;
         lv_obj_t* myUpBtn;
         lv_obj_t* myDownBtn;

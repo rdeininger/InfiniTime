@@ -409,6 +409,7 @@ list(APPEND SOURCE_FILES
         displayapp/widgets/Counter.cpp
         displayapp/widgets/PageIndicator.cpp
         displayapp/widgets/StatusIcons.cpp
+        displayapp/widgets/ScoreCounter.cpp
 
         ## Settings
         displayapp/screens/settings/QuickSettings.cpp
@@ -619,6 +620,7 @@ set(INCLUDE_FILES
         displayapp/widgets/Counter.h
         displayapp/widgets/PageIndicator.h
         displayapp/widgets/StatusIcons.h
+        displayapp/widgets/ScoreCounter.h
         drivers/St7789.h
         drivers/SpiNorFlash.h
         drivers/SpiMaster.h
