@@ -18,7 +18,8 @@
       "sources": [
          {
             "file": "JetBrainsMono-Regular.ttf",
-            "range": "0x25, 0x2b, 0x2d, 0x30-0x3a"
+            "range": "0x25, 0x2b, 0x2d, 0x30-0x3a",
+            "symbols": "AdWi"
          }
       ],
       "bpp": 1,
@@ -28,8 +29,7 @@
       "sources": [
          {
             "file": "JetBrainsMono-Light.ttf",
-            "range": "0x25, 0x2D, 0x2F, 0x30-0x3a",
-            "symbols": "AdWi"
+            "range": "0x25, 0x2D, 0x2F, 0x30-0x3a"
          }
       ],
       "bpp": 1,
