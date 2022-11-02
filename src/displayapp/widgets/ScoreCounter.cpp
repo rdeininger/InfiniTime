@@ -168,7 +168,7 @@ void ScoreCounter::Create() {
   lv_obj_set_auto_realign(opScore, true);
 
   static constexpr uint8_t padding = 5;
-  const uint8_t singleWidth = 100;
+  const uint8_t singleWidth = LV_HOR_RES/2 -20;
   static constexpr uint8_t btnHeight = 50;
   const uint8_t containerHeight = btnHeight * 2 + lv_obj_get_height(myScore) + padding * 2;
 

@@ -2,6 +2,7 @@
 
 #include "displayapp/screens/Screen.h"
 #include "displayapp/widgets/ScoreCounter.h"
+#include "displayapp/widgets/ScoreBoard.h"
 #include <lvgl/lvgl.h>
 
 namespace Pinetime {
@@ -14,7 +15,15 @@ namespace Pinetime {
           ~TennisScore() override;
 
       private:
-        Widgets::ScoreCounter scoreCounter = Widgets::ScoreCounter(jetbrains_mono_76);
+        int padding = 5;
+        int btnHeight = 45;
+
+        Widgets::ScoreBoard gameBoard = Widgets::ScoreBoard();
+        Widgets::ScoreBoard set1Board = Widgets::ScoreBoard();
+        Widgets::ScoreBoard set2Board = Widgets::ScoreBoard();
+        Widgets::ScoreBoard set3Board = Widgets::ScoreBoard();
+
+
       };
     }
   }
